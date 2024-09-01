@@ -1,0 +1,74 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\serap\\source\\repos\\Odev2.3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D33C0A4B-AC71-4E25-B927-9E8DB57581FE}|Odev2.3\\Odev2.3.csproj|c:\\users\\serap\\source\\repos\\odev2.3\\odev2.3\\personelkayitformu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D33C0A4B-AC71-4E25-B927-9E8DB57581FE}|Odev2.3\\Odev2.3.csproj|solutionrelative:odev2.3\\personelkayitformu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D33C0A4B-AC71-4E25-B927-9E8DB57581FE}|Odev2.3\\Odev2.3.csproj|C:\\Users\\serap\\source\\repos\\Odev2.3\\odev2.3\\personelkayitformu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D33C0A4B-AC71-4E25-B927-9E8DB57581FE}|Odev2.3\\Odev2.3.csproj|solutionrelative:odev2.3\\personelkayitformu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D33C0A4B-AC71-4E25-B927-9E8DB57581FE}|Odev2.3\\Odev2.3.csproj|c:\\users\\serap\\source\\repos\\odev2.3\\odev2.3\\personelkayitformu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D33C0A4B-AC71-4E25-B927-9E8DB57581FE}|Odev2.3\\Odev2.3.csproj|solutionrelative:odev2.3\\personelkayitformu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PersonelKayitFormu.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\serap\\source\\repos\\Odev2.3\\Odev2.3\\PersonelKayitFormu.Designer.cs",
+              "RelativeDocumentMoniker": "Odev2.3\\PersonelKayitFormu.Designer.cs",
+              "ToolTip": "C:\\Users\\serap\\source\\repos\\Odev2.3\\Odev2.3\\PersonelKayitFormu.Designer.cs",
+              "RelativeToolTip": "Odev2.3\\PersonelKayitFormu.Designer.cs",
+              "ViewState": "AgIAACMDAAAAAAAAAAAAwD0DAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T12:34:30.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PersonelKayitFormu.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\serap\\source\\repos\\Odev2.3\\Odev2.3\\PersonelKayitFormu.cs",
+              "RelativeDocumentMoniker": "Odev2.3\\PersonelKayitFormu.cs",
+              "ToolTip": "C:\\Users\\serap\\source\\repos\\Odev2.3\\Odev2.3\\PersonelKayitFormu.cs [Design]",
+              "RelativeToolTip": "Odev2.3\\PersonelKayitFormu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T07:31:47.36Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PersonelKayitFormu.cs",
+              "DocumentMoniker": "C:\\Users\\serap\\source\\repos\\Odev2.3\\Odev2.3\\PersonelKayitFormu.cs",
+              "RelativeDocumentMoniker": "Odev2.3\\PersonelKayitFormu.cs",
+              "ToolTip": "C:\\Users\\serap\\source\\repos\\Odev2.3\\Odev2.3\\PersonelKayitFormu.cs",
+              "RelativeToolTip": "Odev2.3\\PersonelKayitFormu.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAQwDkAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T08:03:05.146Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
