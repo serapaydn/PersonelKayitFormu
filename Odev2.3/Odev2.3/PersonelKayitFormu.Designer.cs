@@ -79,10 +79,13 @@
             this.chb_rusca = new System.Windows.Forms.CheckBox();
             this.chb_cince = new System.Windows.Forms.CheckBox();
             this.chb_italyanca = new System.Windows.Forms.CheckBox();
-            this.lbl_personelbilgi = new System.Windows.Forms.Label();
             this.btn_kaydet = new System.Windows.Forms.Button();
-            this.lbl_sonuc = new System.Windows.Forms.Label();
             this.mc_dogumtarihi = new System.Windows.Forms.MonthCalendar();
+            this.lb_personeller = new System.Windows.Forms.ListBox();
+            this.btn_personellistele = new System.Windows.Forms.Button();
+            this.lbl_sonuc = new System.Windows.Forms.Label();
+            this.lbl_personelbilgi = new System.Windows.Forms.Label();
+            this.lbl_personel = new System.Windows.Forms.Label();
             this.gb_medenihal.SuspendLayout();
             this.gb_cinsiyet.SuspendLayout();
             this.gb_yabancidil.SuspendLayout();
@@ -94,7 +97,7 @@
             this.lbl_baslik.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.lbl_baslik.Font = new System.Drawing.Font("Calibri", 17F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lbl_baslik.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.lbl_baslik.Location = new System.Drawing.Point(450, 9);
+            this.lbl_baslik.Location = new System.Drawing.Point(390, -2);
             this.lbl_baslik.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_baslik.Name = "lbl_baslik";
             this.lbl_baslik.Size = new System.Drawing.Size(264, 36);
@@ -106,7 +109,7 @@
             // 
             this.lbl_isim.AutoSize = true;
             this.lbl_isim.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_isim.Location = new System.Drawing.Point(80, 46);
+            this.lbl_isim.Location = new System.Drawing.Point(13, 46);
             this.lbl_isim.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_isim.Name = "lbl_isim";
             this.lbl_isim.Size = new System.Drawing.Size(43, 21);
@@ -116,19 +119,19 @@
             // 
             // tb_isim
             // 
-            this.tb_isim.Location = new System.Drawing.Point(80, 71);
+            this.tb_isim.Location = new System.Drawing.Point(17, 71);
             this.tb_isim.Margin = new System.Windows.Forms.Padding(4);
             this.tb_isim.Name = "tb_isim";
-            this.tb_isim.Size = new System.Drawing.Size(260, 28);
+            this.tb_isim.Size = new System.Drawing.Size(182, 28);
             this.tb_isim.TabIndex = 1;
             this.tb_isim.UseWaitCursor = true;
             // 
             // tb_soyisim
             // 
-            this.tb_soyisim.Location = new System.Drawing.Point(363, 71);
+            this.tb_soyisim.Location = new System.Drawing.Point(221, 71);
             this.tb_soyisim.Margin = new System.Windows.Forms.Padding(4);
             this.tb_soyisim.Name = "tb_soyisim";
-            this.tb_soyisim.Size = new System.Drawing.Size(260, 28);
+            this.tb_soyisim.Size = new System.Drawing.Size(182, 28);
             this.tb_soyisim.TabIndex = 2;
             this.tb_soyisim.UseWaitCursor = true;
             // 
@@ -136,7 +139,7 @@
             // 
             this.lbl_soyisim.AutoSize = true;
             this.lbl_soyisim.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_soyisim.Location = new System.Drawing.Point(363, 46);
+            this.lbl_soyisim.Location = new System.Drawing.Point(221, 46);
             this.lbl_soyisim.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_soyisim.Name = "lbl_soyisim";
             this.lbl_soyisim.Size = new System.Drawing.Size(68, 21);
@@ -146,11 +149,11 @@
             // 
             // mtb_kimlik
             // 
-            this.mtb_kimlik.Location = new System.Drawing.Point(631, 71);
+            this.mtb_kimlik.Location = new System.Drawing.Point(426, 71);
             this.mtb_kimlik.Margin = new System.Windows.Forms.Padding(4);
             this.mtb_kimlik.Mask = "00000000000";
             this.mtb_kimlik.Name = "mtb_kimlik";
-            this.mtb_kimlik.Size = new System.Drawing.Size(260, 28);
+            this.mtb_kimlik.Size = new System.Drawing.Size(182, 28);
             this.mtb_kimlik.TabIndex = 3;
             this.mtb_kimlik.UseWaitCursor = true;
             // 
@@ -158,7 +161,7 @@
             // 
             this.lbl_kimlik.AutoSize = true;
             this.lbl_kimlik.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_kimlik.Location = new System.Drawing.Point(625, 46);
+            this.lbl_kimlik.Location = new System.Drawing.Point(422, 46);
             this.lbl_kimlik.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_kimlik.Name = "lbl_kimlik";
             this.lbl_kimlik.Size = new System.Drawing.Size(156, 21);
@@ -170,7 +173,7 @@
             // 
             this.lbl_telefonno.AutoSize = true;
             this.lbl_telefonno.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_telefonno.Location = new System.Drawing.Point(80, 156);
+            this.lbl_telefonno.Location = new System.Drawing.Point(13, 156);
             this.lbl_telefonno.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_telefonno.Name = "lbl_telefonno";
             this.lbl_telefonno.Size = new System.Drawing.Size(137, 21);
@@ -180,11 +183,11 @@
             // 
             // mtb_telefonno
             // 
-            this.mtb_telefonno.Location = new System.Drawing.Point(80, 181);
+            this.mtb_telefonno.Location = new System.Drawing.Point(17, 181);
             this.mtb_telefonno.Margin = new System.Windows.Forms.Padding(4);
             this.mtb_telefonno.Mask = "(999) 000-0000";
             this.mtb_telefonno.Name = "mtb_telefonno";
-            this.mtb_telefonno.Size = new System.Drawing.Size(260, 28);
+            this.mtb_telefonno.Size = new System.Drawing.Size(182, 28);
             this.mtb_telefonno.TabIndex = 7;
             this.mtb_telefonno.UseWaitCursor = true;
             // 
@@ -193,9 +196,9 @@
             this.gb_medenihal.Controls.Add(this.rb_bekar);
             this.gb_medenihal.Controls.Add(this.rb_evli);
             this.gb_medenihal.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.gb_medenihal.Location = new System.Drawing.Point(363, 226);
+            this.gb_medenihal.Location = new System.Drawing.Point(221, 226);
             this.gb_medenihal.Name = "gb_medenihal";
-            this.gb_medenihal.Size = new System.Drawing.Size(260, 63);
+            this.gb_medenihal.Size = new System.Drawing.Size(182, 63);
             this.gb_medenihal.TabIndex = 10;
             this.gb_medenihal.TabStop = false;
             this.gb_medenihal.Text = "Medeni Hal";
@@ -230,9 +233,9 @@
             this.gb_cinsiyet.Controls.Add(this.rb_kadin);
             this.gb_cinsiyet.Controls.Add(this.rb_erkek);
             this.gb_cinsiyet.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.gb_cinsiyet.Location = new System.Drawing.Point(80, 226);
+            this.gb_cinsiyet.Location = new System.Drawing.Point(17, 226);
             this.gb_cinsiyet.Name = "gb_cinsiyet";
-            this.gb_cinsiyet.Size = new System.Drawing.Size(260, 63);
+            this.gb_cinsiyet.Size = new System.Drawing.Size(182, 63);
             this.gb_cinsiyet.TabIndex = 9;
             this.gb_cinsiyet.TabStop = false;
             this.gb_cinsiyet.Text = "Cinsiyet";
@@ -264,10 +267,10 @@
             // 
             // tb_babaadi
             // 
-            this.tb_babaadi.Location = new System.Drawing.Point(80, 124);
+            this.tb_babaadi.Location = new System.Drawing.Point(17, 124);
             this.tb_babaadi.Margin = new System.Windows.Forms.Padding(4);
             this.tb_babaadi.Name = "tb_babaadi";
-            this.tb_babaadi.Size = new System.Drawing.Size(260, 28);
+            this.tb_babaadi.Size = new System.Drawing.Size(182, 28);
             this.tb_babaadi.TabIndex = 4;
             this.tb_babaadi.UseWaitCursor = true;
             // 
@@ -275,7 +278,7 @@
             // 
             this.lbl_babaadi.AutoSize = true;
             this.lbl_babaadi.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_babaadi.Location = new System.Drawing.Point(78, 103);
+            this.lbl_babaadi.Location = new System.Drawing.Point(13, 103);
             this.lbl_babaadi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_babaadi.Name = "lbl_babaadi";
             this.lbl_babaadi.Size = new System.Drawing.Size(78, 21);
@@ -287,7 +290,7 @@
             // 
             this.lbl_memleket.AutoSize = true;
             this.lbl_memleket.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_memleket.Location = new System.Drawing.Point(363, 162);
+            this.lbl_memleket.Location = new System.Drawing.Point(221, 162);
             this.lbl_memleket.Name = "lbl_memleket";
             this.lbl_memleket.Size = new System.Drawing.Size(84, 21);
             this.lbl_memleket.TabIndex = 13;
@@ -379,9 +382,9 @@
             " Yalova",
             " Yozgat",
             " Zonguldak"});
-            this.cb_memleket.Location = new System.Drawing.Point(363, 180);
+            this.cb_memleket.Location = new System.Drawing.Point(221, 180);
             this.cb_memleket.Name = "cb_memleket";
-            this.cb_memleket.Size = new System.Drawing.Size(260, 29);
+            this.cb_memleket.Size = new System.Drawing.Size(182, 29);
             this.cb_memleket.TabIndex = 8;
             this.cb_memleket.UseWaitCursor = true;
             // 
@@ -389,7 +392,7 @@
             // 
             this.lbl_adres.AutoSize = true;
             this.lbl_adres.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_adres.Location = new System.Drawing.Point(78, 358);
+            this.lbl_adres.Location = new System.Drawing.Point(13, 358);
             this.lbl_adres.Name = "lbl_adres";
             this.lbl_adres.Size = new System.Drawing.Size(55, 21);
             this.lbl_adres.TabIndex = 15;
@@ -398,11 +401,11 @@
             // 
             // tb_adres
             // 
-            this.tb_adres.Location = new System.Drawing.Point(80, 385);
+            this.tb_adres.Location = new System.Drawing.Point(17, 385);
             this.tb_adres.Multiline = true;
             this.tb_adres.Name = "tb_adres";
             this.tb_adres.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.tb_adres.Size = new System.Drawing.Size(260, 70);
+            this.tb_adres.Size = new System.Drawing.Size(182, 70);
             this.tb_adres.TabIndex = 13;
             this.tb_adres.UseWaitCursor = true;
             // 
@@ -410,7 +413,7 @@
             // 
             this.lbl_cocuksayisi.AutoSize = true;
             this.lbl_cocuksayisi.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_cocuksayisi.Location = new System.Drawing.Point(363, 301);
+            this.lbl_cocuksayisi.Location = new System.Drawing.Point(221, 301);
             this.lbl_cocuksayisi.Name = "lbl_cocuksayisi";
             this.lbl_cocuksayisi.Size = new System.Drawing.Size(101, 21);
             this.lbl_cocuksayisi.TabIndex = 17;
@@ -437,9 +440,9 @@
             "13",
             "14",
             "15"});
-            this.cb_cocuksayisi.Location = new System.Drawing.Point(363, 326);
+            this.cb_cocuksayisi.Location = new System.Drawing.Point(221, 326);
             this.cb_cocuksayisi.Name = "cb_cocuksayisi";
-            this.cb_cocuksayisi.Size = new System.Drawing.Size(260, 29);
+            this.cb_cocuksayisi.Size = new System.Drawing.Size(182, 29);
             this.cb_cocuksayisi.TabIndex = 12;
             this.cb_cocuksayisi.UseWaitCursor = true;
             // 
@@ -447,7 +450,7 @@
             // 
             this.lbl_uyruk.AutoSize = true;
             this.lbl_uyruk.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_uyruk.Location = new System.Drawing.Point(78, 301);
+            this.lbl_uyruk.Location = new System.Drawing.Point(13, 301);
             this.lbl_uyruk.Name = "lbl_uyruk";
             this.lbl_uyruk.Size = new System.Drawing.Size(67, 21);
             this.lbl_uyruk.TabIndex = 19;
@@ -473,9 +476,9 @@
             "Kanada - Kanadalı",
             "Meksika - Meksikalı",
             "Rusya- Rus"});
-            this.cb_uyruk.Location = new System.Drawing.Point(80, 326);
+            this.cb_uyruk.Location = new System.Drawing.Point(17, 326);
             this.cb_uyruk.Name = "cb_uyruk";
-            this.cb_uyruk.Size = new System.Drawing.Size(260, 29);
+            this.cb_uyruk.Size = new System.Drawing.Size(182, 29);
             this.cb_uyruk.TabIndex = 11;
             this.cb_uyruk.UseWaitCursor = true;
             // 
@@ -491,9 +494,9 @@
             "Lisans",
             "Yüksek Lisans",
             "Doktora"});
-            this.cb_egitimseviyesi.Location = new System.Drawing.Point(80, 488);
+            this.cb_egitimseviyesi.Location = new System.Drawing.Point(17, 488);
             this.cb_egitimseviyesi.Name = "cb_egitimseviyesi";
-            this.cb_egitimseviyesi.Size = new System.Drawing.Size(260, 29);
+            this.cb_egitimseviyesi.Size = new System.Drawing.Size(182, 29);
             this.cb_egitimseviyesi.TabIndex = 15;
             this.cb_egitimseviyesi.UseWaitCursor = true;
             // 
@@ -501,7 +504,7 @@
             // 
             this.lbl_egitimseviyesi.AutoSize = true;
             this.lbl_egitimseviyesi.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_egitimseviyesi.Location = new System.Drawing.Point(80, 464);
+            this.lbl_egitimseviyesi.Location = new System.Drawing.Point(13, 464);
             this.lbl_egitimseviyesi.Name = "lbl_egitimseviyesi";
             this.lbl_egitimseviyesi.Size = new System.Drawing.Size(117, 21);
             this.lbl_egitimseviyesi.TabIndex = 23;
@@ -512,7 +515,7 @@
             // 
             this.lbl_departman.AutoSize = true;
             this.lbl_departman.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_departman.Location = new System.Drawing.Point(363, 464);
+            this.lbl_departman.Location = new System.Drawing.Point(221, 464);
             this.lbl_departman.Name = "lbl_departman";
             this.lbl_departman.Size = new System.Drawing.Size(94, 21);
             this.lbl_departman.TabIndex = 25;
@@ -535,9 +538,9 @@
             "Hukuk",
             "Strateji ve Planlama",
             "İletişim ve Halkla İlişkiler"});
-            this.cb_departman.Location = new System.Drawing.Point(363, 488);
+            this.cb_departman.Location = new System.Drawing.Point(221, 488);
             this.cb_departman.Name = "cb_departman";
-            this.cb_departman.Size = new System.Drawing.Size(260, 29);
+            this.cb_departman.Size = new System.Drawing.Size(182, 29);
             this.cb_departman.TabIndex = 16;
             this.cb_departman.UseWaitCursor = true;
             // 
@@ -545,7 +548,7 @@
             // 
             this.lbl_dogumtarihi.AutoSize = true;
             this.lbl_dogumtarihi.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_dogumtarihi.Location = new System.Drawing.Point(631, 103);
+            this.lbl_dogumtarihi.Location = new System.Drawing.Point(422, 103);
             this.lbl_dogumtarihi.Name = "lbl_dogumtarihi";
             this.lbl_dogumtarihi.Size = new System.Drawing.Size(108, 21);
             this.lbl_dogumtarihi.TabIndex = 27;
@@ -556,7 +559,7 @@
             // 
             this.lbl_email.AutoSize = true;
             this.lbl_email.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_email.Location = new System.Drawing.Point(363, 103);
+            this.lbl_email.Location = new System.Drawing.Point(221, 103);
             this.lbl_email.Name = "lbl_email";
             this.lbl_email.Size = new System.Drawing.Size(58, 21);
             this.lbl_email.TabIndex = 29;
@@ -565,9 +568,9 @@
             // 
             // tb_email
             // 
-            this.tb_email.Location = new System.Drawing.Point(357, 131);
+            this.tb_email.Location = new System.Drawing.Point(221, 131);
             this.tb_email.Name = "tb_email";
-            this.tb_email.Size = new System.Drawing.Size(260, 28);
+            this.tb_email.Size = new System.Drawing.Size(182, 28);
             this.tb_email.TabIndex = 5;
             this.tb_email.UseWaitCursor = true;
             // 
@@ -575,7 +578,7 @@
             // 
             this.lbl_isebaslama.AutoSize = true;
             this.lbl_isebaslama.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_isebaslama.Location = new System.Drawing.Point(80, 529);
+            this.lbl_isebaslama.Location = new System.Drawing.Point(13, 529);
             this.lbl_isebaslama.Name = "lbl_isebaslama";
             this.lbl_isebaslama.Size = new System.Drawing.Size(141, 21);
             this.lbl_isebaslama.TabIndex = 31;
@@ -584,10 +587,10 @@
             // 
             // mtb_isebaslamatarihi
             // 
-            this.mtb_isebaslamatarihi.Location = new System.Drawing.Point(80, 558);
+            this.mtb_isebaslamatarihi.Location = new System.Drawing.Point(17, 558);
             this.mtb_isebaslamatarihi.Mask = "00/00/0000";
             this.mtb_isebaslamatarihi.Name = "mtb_isebaslamatarihi";
-            this.mtb_isebaslamatarihi.Size = new System.Drawing.Size(260, 28);
+            this.mtb_isebaslamatarihi.Size = new System.Drawing.Size(182, 28);
             this.mtb_isebaslamatarihi.TabIndex = 17;
             this.mtb_isebaslamatarihi.UseWaitCursor = true;
             this.mtb_isebaslamatarihi.ValidatingType = typeof(System.DateTime);
@@ -596,7 +599,7 @@
             // 
             this.lbl_calismasekli.AutoSize = true;
             this.lbl_calismasekli.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_calismasekli.Location = new System.Drawing.Point(363, 534);
+            this.lbl_calismasekli.Location = new System.Drawing.Point(221, 534);
             this.lbl_calismasekli.Name = "lbl_calismasekli";
             this.lbl_calismasekli.Size = new System.Drawing.Size(106, 21);
             this.lbl_calismasekli.TabIndex = 33;
@@ -611,9 +614,9 @@
             "Yarı Zamanlı",
             "Geçici",
             "PartTime"});
-            this.cb_calismasekli.Location = new System.Drawing.Point(363, 558);
+            this.cb_calismasekli.Location = new System.Drawing.Point(221, 558);
             this.cb_calismasekli.Name = "cb_calismasekli";
-            this.cb_calismasekli.Size = new System.Drawing.Size(260, 29);
+            this.cb_calismasekli.Size = new System.Drawing.Size(182, 29);
             this.cb_calismasekli.TabIndex = 18;
             this.cb_calismasekli.UseWaitCursor = true;
             // 
@@ -621,19 +624,19 @@
             // 
             this.lbl_acildurumno.AutoSize = true;
             this.lbl_acildurumno.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_acildurumno.Location = new System.Drawing.Point(76, 602);
+            this.lbl_acildurumno.Location = new System.Drawing.Point(13, 602);
             this.lbl_acildurumno.Name = "lbl_acildurumno";
-            this.lbl_acildurumno.Size = new System.Drawing.Size(258, 21);
+            this.lbl_acildurumno.Size = new System.Drawing.Size(169, 21);
             this.lbl_acildurumno.TabIndex = 35;
-            this.lbl_acildurumno.Text = "Acil Durumda Aranacak Telefon No:";
+            this.lbl_acildurumno.Text = "Acil Durum Telefon No:";
             this.lbl_acildurumno.UseWaitCursor = true;
             // 
             // mtb_acildurumno
             // 
-            this.mtb_acildurumno.Location = new System.Drawing.Point(80, 627);
+            this.mtb_acildurumno.Location = new System.Drawing.Point(17, 627);
             this.mtb_acildurumno.Mask = "(999) 000-0000";
             this.mtb_acildurumno.Name = "mtb_acildurumno";
-            this.mtb_acildurumno.Size = new System.Drawing.Size(260, 28);
+            this.mtb_acildurumno.Size = new System.Drawing.Size(182, 28);
             this.mtb_acildurumno.TabIndex = 21;
             this.mtb_acildurumno.UseWaitCursor = true;
             // 
@@ -641,7 +644,7 @@
             // 
             this.lbl_sağlikdurumu.AutoSize = true;
             this.lbl_sağlikdurumu.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_sağlikdurumu.Location = new System.Drawing.Point(363, 602);
+            this.lbl_sağlikdurumu.Location = new System.Drawing.Point(221, 602);
             this.lbl_sağlikdurumu.Name = "lbl_sağlikdurumu";
             this.lbl_sağlikdurumu.Size = new System.Drawing.Size(122, 21);
             this.lbl_sağlikdurumu.TabIndex = 37;
@@ -650,9 +653,9 @@
             // 
             // tb_hastalik
             // 
-            this.tb_hastalik.Location = new System.Drawing.Point(363, 626);
+            this.tb_hastalik.Location = new System.Drawing.Point(221, 626);
             this.tb_hastalik.Name = "tb_hastalik";
-            this.tb_hastalik.Size = new System.Drawing.Size(260, 28);
+            this.tb_hastalik.Size = new System.Drawing.Size(182, 28);
             this.tb_hastalik.TabIndex = 22;
             this.tb_hastalik.UseWaitCursor = true;
             // 
@@ -660,7 +663,7 @@
             // 
             this.lbl_iban.AutoSize = true;
             this.lbl_iban.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_iban.Location = new System.Drawing.Point(80, 662);
+            this.lbl_iban.Location = new System.Drawing.Point(13, 662);
             this.lbl_iban.Name = "lbl_iban";
             this.lbl_iban.Size = new System.Drawing.Size(49, 21);
             this.lbl_iban.TabIndex = 39;
@@ -669,11 +672,11 @@
             // 
             // mtb_iban
             // 
-            this.mtb_iban.Location = new System.Drawing.Point(80, 687);
+            this.mtb_iban.Location = new System.Drawing.Point(17, 687);
             this.mtb_iban.Margin = new System.Windows.Forms.Padding(4);
             this.mtb_iban.Mask = "TR00-0000-0000-0000-0000-00";
             this.mtb_iban.Name = "mtb_iban";
-            this.mtb_iban.Size = new System.Drawing.Size(260, 28);
+            this.mtb_iban.Size = new System.Drawing.Size(182, 28);
             this.mtb_iban.TabIndex = 23;
             this.mtb_iban.UseWaitCursor = true;
             // 
@@ -681,7 +684,7 @@
             // 
             this.lbl_notlar.AutoSize = true;
             this.lbl_notlar.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_notlar.Location = new System.Drawing.Point(363, 662);
+            this.lbl_notlar.Location = new System.Drawing.Point(221, 662);
             this.lbl_notlar.Name = "lbl_notlar";
             this.lbl_notlar.Size = new System.Drawing.Size(195, 21);
             this.lbl_notlar.TabIndex = 42;
@@ -690,11 +693,11 @@
             // 
             // tb_notlar
             // 
-            this.tb_notlar.Location = new System.Drawing.Point(363, 687);
+            this.tb_notlar.Location = new System.Drawing.Point(221, 687);
             this.tb_notlar.Multiline = true;
             this.tb_notlar.Name = "tb_notlar";
             this.tb_notlar.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.tb_notlar.Size = new System.Drawing.Size(260, 28);
+            this.tb_notlar.Size = new System.Drawing.Size(182, 28);
             this.tb_notlar.TabIndex = 24;
             this.tb_notlar.UseWaitCursor = true;
             // 
@@ -743,7 +746,7 @@
             this.gb_yabancidil.Controls.Add(this.chb_fransizca);
             this.gb_yabancidil.Controls.Add(this.chb_almanca);
             this.gb_yabancidil.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.gb_yabancidil.Location = new System.Drawing.Point(363, 371);
+            this.gb_yabancidil.Location = new System.Drawing.Point(221, 371);
             this.gb_yabancidil.Name = "gb_yabancidil";
             this.gb_yabancidil.Size = new System.Drawing.Size(276, 90);
             this.gb_yabancidil.TabIndex = 46;
@@ -787,23 +790,12 @@
             this.chb_italyanca.UseVisualStyleBackColor = true;
             this.chb_italyanca.UseWaitCursor = true;
             // 
-            // lbl_personelbilgi
-            // 
-            this.lbl_personelbilgi.AutoSize = true;
-            this.lbl_personelbilgi.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_personelbilgi.Location = new System.Drawing.Point(925, 53);
-            this.lbl_personelbilgi.Name = "lbl_personelbilgi";
-            this.lbl_personelbilgi.Size = new System.Drawing.Size(161, 27);
-            this.lbl_personelbilgi.TabIndex = 47;
-            this.lbl_personelbilgi.Text = "Personel Bilgileri";
-            this.lbl_personelbilgi.UseWaitCursor = true;
-            // 
             // btn_kaydet
             // 
             this.btn_kaydet.BackColor = System.Drawing.Color.RoyalBlue;
             this.btn_kaydet.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn_kaydet.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn_kaydet.Location = new System.Drawing.Point(629, 683);
+            this.btn_kaydet.Location = new System.Drawing.Point(422, 682);
             this.btn_kaydet.Name = "btn_kaydet";
             this.btn_kaydet.Size = new System.Drawing.Size(129, 33);
             this.btn_kaydet.TabIndex = 48;
@@ -812,22 +804,66 @@
             this.btn_kaydet.UseWaitCursor = true;
             this.btn_kaydet.Click += new System.EventHandler(this.btn_kaydet_Click);
             // 
+            // mc_dogumtarihi
+            // 
+            this.mc_dogumtarihi.Location = new System.Drawing.Point(426, 124);
+            this.mc_dogumtarihi.Name = "mc_dogumtarihi";
+            this.mc_dogumtarihi.TabIndex = 6;
+            this.mc_dogumtarihi.UseWaitCursor = true;
+            // 
+            // lb_personeller
+            // 
+            this.lb_personeller.FormattingEnabled = true;
+            this.lb_personeller.ItemHeight = 21;
+            this.lb_personeller.Location = new System.Drawing.Point(700, 57);
+            this.lb_personeller.Name = "lb_personeller";
+            this.lb_personeller.Size = new System.Drawing.Size(199, 613);
+            this.lb_personeller.TabIndex = 50;
+            this.lb_personeller.UseWaitCursor = true;
+            // 
+            // btn_personellistele
+            // 
+            this.btn_personellistele.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_personellistele.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_personellistele.ForeColor = System.Drawing.SystemColors.Control;
+            this.btn_personellistele.Location = new System.Drawing.Point(700, 682);
+            this.btn_personellistele.Name = "btn_personellistele";
+            this.btn_personellistele.Size = new System.Drawing.Size(199, 33);
+            this.btn_personellistele.TabIndex = 51;
+            this.btn_personellistele.Text = "Personel Listele";
+            this.btn_personellistele.UseVisualStyleBackColor = false;
+            this.btn_personellistele.UseWaitCursor = true;
+            this.btn_personellistele.Click += new System.EventHandler(this.btn_personellistele_Click);
+            // 
             // lbl_sonuc
             // 
             this.lbl_sonuc.AutoSize = true;
             this.lbl_sonuc.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_sonuc.Location = new System.Drawing.Point(926, 138);
+            this.lbl_sonuc.Location = new System.Drawing.Point(915, 103);
             this.lbl_sonuc.Name = "lbl_sonuc";
             this.lbl_sonuc.Size = new System.Drawing.Size(0, 21);
             this.lbl_sonuc.TabIndex = 49;
             this.lbl_sonuc.UseWaitCursor = true;
             // 
-            // mc_dogumtarihi
+            // lbl_personelbilgi
             // 
-            this.mc_dogumtarihi.Location = new System.Drawing.Point(635, 131);
-            this.mc_dogumtarihi.Name = "mc_dogumtarihi";
-            this.mc_dogumtarihi.TabIndex = 6;
-            this.mc_dogumtarihi.UseWaitCursor = true;
+            this.lbl_personelbilgi.AutoSize = true;
+            this.lbl_personelbilgi.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_personelbilgi.Location = new System.Drawing.Point(958, 57);
+            this.lbl_personelbilgi.Name = "lbl_personelbilgi";
+            this.lbl_personelbilgi.Size = new System.Drawing.Size(161, 27);
+            this.lbl_personelbilgi.TabIndex = 47;
+            this.lbl_personelbilgi.Text = "Personel Bilgileri";
+            this.lbl_personelbilgi.UseWaitCursor = true;
+            // 
+            // lbl_personel
+            // 
+            this.lbl_personel.AutoSize = true;
+            this.lbl_personel.Location = new System.Drawing.Point(742, 33);
+            this.lbl_personel.Name = "lbl_personel";
+            this.lbl_personel.Size = new System.Drawing.Size(88, 21);
+            this.lbl_personel.TabIndex = 52;
+            this.lbl_personel.Text = "Personeller";
             // 
             // PersonelKayitFormu
             // 
@@ -835,6 +871,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(1209, 729);
+            this.Controls.Add(this.lbl_personel);
+            this.Controls.Add(this.btn_personellistele);
+            this.Controls.Add(this.lb_personeller);
             this.Controls.Add(this.mc_dogumtarihi);
             this.Controls.Add(this.lbl_sonuc);
             this.Controls.Add(this.btn_kaydet);
@@ -950,9 +989,12 @@
         private System.Windows.Forms.CheckBox chb_rusca;
         private System.Windows.Forms.CheckBox chb_cince;
         private System.Windows.Forms.CheckBox chb_italyanca;
-        private System.Windows.Forms.Label lbl_personelbilgi;
         private System.Windows.Forms.Button btn_kaydet;
-        private System.Windows.Forms.Label lbl_sonuc;
         private System.Windows.Forms.MonthCalendar mc_dogumtarihi;
+        private System.Windows.Forms.ListBox lb_personeller;
+        private System.Windows.Forms.Button btn_personellistele;
+        private System.Windows.Forms.Label lbl_sonuc;
+        private System.Windows.Forms.Label lbl_personelbilgi;
+        private System.Windows.Forms.Label lbl_personel;
     }
 }
